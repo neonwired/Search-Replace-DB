@@ -134,7 +134,7 @@ class icit_srdb_ui extends icit_srdb {
 		register_shutdown_function( array( $this, 'fatal_handler' ) );
 
 		// flag to bootstrap WP or Drupal
-		$bootstrap = true; // isset( $_GET[ 'bootstrap' ] );
+		$bootstrap = false; // isset( $_GET[ 'bootstrap' ] );
 
 		// discover environment
 		if ( $bootstrap && $this->is_wordpress() ) {
